@@ -9,9 +9,10 @@
 /* Chapter4: Functions */
 
 // function literals doesn't require a name, it can be anonymous
-var add = function(a,b){
+var add = function testanem(a,b){
 	return a+b;
 };	//add.name is empty string
+
 
 // 1. The Method Invocation Pattern
 
@@ -122,6 +123,10 @@ var mainModule = (function(){
 	var b = function(){
 		console.log(1);	
 	};
+	var c = function(){
+		console.log(2);
+	};
+
 	return{
 		getA: function(){
 			console.log(a);
